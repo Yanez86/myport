@@ -21,6 +21,8 @@ main{
     justify-content:  space-around;
     gap: 50px;
     padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
