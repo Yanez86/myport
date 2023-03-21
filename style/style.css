@@ -167,11 +167,17 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .bigname{
-        font-size: 2em;
+        font-size: 5em;
     }
     .yellow-strip{
         font-size: 2em;
+        height: 2em;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: black;
     }
 }
