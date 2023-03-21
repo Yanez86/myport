@@ -166,3 +166,12 @@ footer a:hover {
     color: #f2d729;
     text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+    .bigname{
+        font-size: 2em;
+    }
+    .yellow-strip{
+        font-size: 2em;
+    }
+}
