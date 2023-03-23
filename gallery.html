@@ -10,13 +10,26 @@
     <script src="https://kit.fontawesome.com/79c285c588.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> 
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylesubpage.css">
     <title>GIBO :: GALLERY</title>
-        <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css">
 </head>
 
 <body>
+    <!--- LIGHTBOX -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><div class="imgBig" id="imgBig"></div></p>
+        </div>
+
+    </div>
+
+    <!--- LIGHTBOX -->
 
     <header>
         <span class="backtohome"><a href="index.html">HOME</a></span>
@@ -25,23 +38,25 @@
     <main>
         <div class="griglia" id="gallery">
         </div>
-    
+
         <div class="navigator">
             <span onClick="prevPage()" id="previous"></span>
             <span class="pages" id="pagNumber"></span>
             <span onClick="nextPage()" id="next">Dopo</span>
         </div>
     </main>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
-<footer>
-    <div class="links">
-        <div><a href="https://www.instagram.com/zanocapa/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i>&nbsp;Yanez on Air</a> </div>
-        <div><a href="https://github.com/Yanez86" target="_blank"><i class="fa-brands fa-github"></i>&nbsp; Yanez86
-                on GitHub</a></div>
-    </div>
-</footer>
+
+
+    <footer>
+        <div class="links">
+            <div><a href="https://www.instagram.com/zanocapa/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i>&nbsp;Yanez on Air</a> </div>
+            <div><a href="https://github.com/Yanez86" target="_blank"><i class="fa-brands fa-github"></i>&nbsp; Yanez86
+                    on GitHub</a></div>
+        </div>
+    </footer>
 
 </body>
 
