@@ -44,13 +44,13 @@ function drawGallery() {
     if (pageNow == 0) {
         document.getElementById("previous").innerHTML = '';
     } else {
-        document.getElementById("previous").innerHTML = 'Pag. ' && pageNow;
+        document.getElementById("previous").innerHTML = 'Indietro';
     }
 
     if (pageNow == pageNeed - 1) {
         document.getElementById("next").innerHTML = '';
     } else {
-        document.getElementById("next").innerHTML = 'Pag. ' && pageNow + 1;
+        document.getElementById("next").innerHTML = 'Avanti';
     }
 }
 
