@@ -32,8 +32,12 @@ header{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height:auto;
     min-height: 100%;
+    margin-top: 50px;
 }
 
 footer {
@@ -96,66 +100,56 @@ article p{
     width: 100%;
 } 
 
-.gallery{
+
+
+.box{
     display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: grey;
     justify-content: center;
-}
-
-.gallery img{
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    object-position: 80% 15%;
-
-}
-
-.grid-gallery{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-    grid-auto-flow: dense;
-    grid-gap: 20px;
-}
-
-.grid-gallery .grid-item{
-    position: relative;
-    background-color: #efefef;
+    align-items: center;
+    color: white;
+    transition: 0.1s;
+    border-color: grey;
     overflow: hidden;
-}
+  }
+  .box:hover{
+    background-color: greenyellow;
+    font-size: 2em;
+  }
 
-.grid-gallery .grid-item img{
+  .box img{   
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
-
-.grid-gallery .grid-item:hover img{
-   transform: scale(1.1);
+.box img:hover{
+    transform: scale(1.1) rotate(3deg);
 }
-
-.grid-gallery .grid-item a{
-    cursor: zoom-in;
-}
-
-.grid-gallery .grid-item:nth-child(3n-2){
-    grid-column: span 2;
-    grid-row: span 2;
-} 
+  .griglia{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  
+  .navigator{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+  }
+  
 
  @media (max-width: 768px){
-    .grid-gallery{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows: 250px;
+    .griglia{
+        grid-template-columns: auto;
+        gap: 20px;
     }
-    .grid-gallery .grid-item:nth-child(3n-2){
-        grid-column: unset;
-        grid-row: unset;
-    } 
+    .box{
+        width: 300px;
+        height: 300px;
+    }
  }
