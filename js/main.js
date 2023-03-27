@@ -1,8 +1,8 @@
 
 
 //variabili setup
-let imagesGallery = 16;                             //foto totali nella gallery
-let imgForPage = 8;                                 //numero di foto per pagina
+let imagesGallery = 33;                             //foto totali nella gallery
+let imgForPage = 12;                                 //numero di foto per pagina
 
 let pageNeed = Math.ceil(imagesGallery / imgForPage);
 let pageNow = 0;                                    // navigatore                   
@@ -63,7 +63,7 @@ var span = document.getElementsByClassName("close")[0];
 function openImg(x){
     console.log(x);
     modal.style.display = "block";
-    document.getElementById("imgBig").innerHTML = '<img src="images/gallery/img-'+x+'.jpg">';
+    document.getElementById("imgBig").innerHTML = '<img src="images/gallery/img-'+x+'.png">';
 
 }
 
