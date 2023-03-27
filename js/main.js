@@ -53,7 +53,6 @@ function drawGallery() {
         document.getElementById("next").innerHTML = 'Avanti';
     }
 }
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -78,4 +77,10 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+//---titolone a caso
+function randomTitle() {
+
 }

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="header-cropped"><img src="images/head1.png"></div>
         <div class="header-cropped"><img src="images/head2.png"></div>
@@ -25,7 +26,50 @@
         <div class="header-cropped"><img src="images/head6.png"></div>
         <div class="header-cropped"><img src="images/head7.png"></div>
         <div class="header-cropped"><img src="images/head8.png"></div>
-        <div class="yellow-strip">GIBOLLINO IS HERE</div>
+        <div class="yellow-strip" id="bigTitle">GIBOLLINO IS HERE</div>
+        <script>
+            var random = Math.floor(Math.random() * 10);
+            console.log(random);
+            
+            var bigTitle;
+            switch (random) {
+                case 1:
+                    bigTitle = "GIBOLLINO IS HERE";
+                    break;
+                case 2:
+                    bigTitle = "GIBOLLINO IS NOT HERE"
+                    break;
+                case 3:
+                    bigTitle = "GIBO WITH SAUSAGES"
+                    break;
+                case 4:
+                    bigTitle = "UNTE & BISUNTE!"
+                    break;
+                case 5:
+                    bigTitle = "UANM' A TOUT LE MONDE"
+                    break;
+                case 6:
+                    bigTitle = "BLUE MONDAY"
+                    break;
+                case 7:
+                    bigTitle = "I <3 GIBOLLINO"
+                    break;
+                case 8:
+                    bigTitle = "QUAIL'S JUMP DAY"
+                    break;
+                case 9:
+                    bigTitle = "SALUT'M A SORRT"
+                    break;
+                case 10:
+                    bigTitle = "THE REAL GIBO"
+                    break;
+
+                default:
+                // code block
+                
+            }
+            document.getElementById("bigTitle").innerHTML = bigTitle;
+        </script>
         <div class="bigname">YANEZ</div>
     </header>
     <main>
@@ -61,7 +105,7 @@
     <footer>
         <div class="links">
             <div><a href="https://www.instagram.com/zanocapa/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i>&nbsp;Yanez on Air</a> </div>
+                        class="fa-brands fa-instagram"></i>&nbsp; Yanez on Air</a> </div>
             <div><a href="https://github.com/Yanez86" target="_blank"><i class="fa-brands fa-github"></i>&nbsp; Yanez86
                     on GitHub</a></div>
         </div>
