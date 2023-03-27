@@ -2,7 +2,7 @@
 
 //variabili setup
 let imagesGallery = 33;                             //foto totali nella gallery
-let imgForPage = 12;                                 //numero di foto per pagina
+let imgForPage = 9;                                 //numero di foto per pagina
 
 let pageNeed = Math.ceil(imagesGallery / imgForPage);
 let pageNow = 0;                                    // navigatore                   
