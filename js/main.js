@@ -1,8 +1,8 @@
 
 
 //variabili setup
-let imagesGallery = 18;                             //foto totali nella gallery
-let imgForPage = 6;                                 //numero di foto per pagina
+let imagesGallery = 16;                             //foto totali nella gallery
+let imgForPage = 8;                                 //numero di foto per pagina
 
 let pageNeed = Math.ceil(imagesGallery / imgForPage);
 let pageNow = 0;                                    // navigatore                   
@@ -36,7 +36,7 @@ function drawGallery() {
     let imageEnd = imagesGallery - (imgForPage * (pageNeed - (pageNow + 1))) + 1;
     //disegno la gallery
     for (i = imageStart; i < imageEnd; i++) {
-        document.getElementById("gallery").innerHTML += '<div onclick=openImg('+i+') class="box" id="myModal"><img src="images/gallery/img-'+i+'.jpg"></div>'
+        document.getElementById("gallery").innerHTML += '<div onclick=openImg('+i+') class="box" id="myModal"><img src="images/gallery/img-'+i+'.png"></div>'
     }
 
     //navigator sotto la gallery
