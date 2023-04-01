@@ -105,7 +105,7 @@ function drawGallery2() {
     galleryArray[31] = "32.png";
     galleryArray[32] = "33.png";
     document.getElementById("gallery").innerHTML = "";
-    galleryArray.forEach(element => {document.getElementById("gallery").innerHTML += '<div onclick=openImg("'+ element +'") class="box" id="myModal"><img src="images/gallery/img-' + element + '"/></div>'});
+    galleryArray.forEach(element => {document.getElementById("gallery").innerHTML += '<div onclick=openImg("'+ element +'") class="box" id="myModal"><img src="images/gallery-resized/img-' + element + '"/></div>'});
 }
 
 function openImg(x) {
